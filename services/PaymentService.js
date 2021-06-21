@@ -52,10 +52,10 @@ class PaymentService {
         //(al igual que hicimos con el precio del item)
         name: "Lalo",
         surname: "Landa",
-        email: "test_user_63274575@testuser.com",
+        email: "test_user_7909733@testuser.com",
         // si estan en sandbox, aca tienen que poner el email de SU usuario de prueba
         phone: {
-          area_code: "11",
+          area_code: "52",
           number: "22223333",
         },
         address: {
@@ -81,7 +81,7 @@ class PaymentService {
       },
       back_urls: {
         // declaramos las urls de redireccionamiento
-        success: "https://localhost:3000",
+        success: "https://localhost:3000/success",
         // url que va a redireccionar si sale todo bien
         pending: "https://localhost:3000.com/pending",
         // url a la que va a redireccionar si decide pagar en efectivo por ejemplo
