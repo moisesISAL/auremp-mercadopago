@@ -28,13 +28,13 @@ class PaymentService {
         // nombre que viene de la prop que recibe del controller
         description: "Dispositivo movil de Tienda e-commerce",
         // descripción del producto
-        picture_url: "https://courseit.com.ar/static/logo.png",
+        picture_url: img,
         // url de la imágen del producto
         category_id: "1234",
         // categoría interna del producto (del negocio)
         quantity: parseInt(unit),
         // cantidad, que tiene que ser un intiger
-        currency_id: "ARS",
+        currency_id: "MXN",
         // id de la moneda, que tiene que ser en ISO 4217
         unit_price: parseFloat(price),
         // el precio, que por su complejidad tiene que ser tipo FLOAT
@@ -81,14 +81,14 @@ class PaymentService {
       },
       back_urls: {
         // declaramos las urls de redireccionamiento
-        success: "https://localhost:3001/success",
+        success: "https://localhost:3000",
         // url que va a redireccionar si sale todo bien
-        pending: "https://localhost:3001.com/pending",
+        pending: "https://localhost:3000.com/pending",
         // url a la que va a redireccionar si decide pagar en efectivo por ejemplo
-        failure: "https://localhost:3001.com/error",
+        failure: "https://localhost:3000.com/error",
         // url a la que va a redireccionar si falla el pago
       },
-      notification_url: "https://mercadopago-checkout.herokuapp.com/webhook",
+      notification_url: "https://auremp-mercadopago.herokuapp.com/webhook",
       // declaramos nuestra url donde recibiremos las notificaciones
       auto_return: "approved",
       // si la compra es exitosa automaticamente redirige a "success" de back_urls
