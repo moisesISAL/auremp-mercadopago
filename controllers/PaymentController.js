@@ -25,7 +25,8 @@ class PaymentController {
     
           return res.status(500).json({
             error: true,
-            msg: "Hubo un error con Mercado Pago"
+            msg: "Hubo un error con Mercado Pago",
+            body: req.body
           });
         }
       }
