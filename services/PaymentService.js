@@ -6,7 +6,7 @@ class PaymentService {
       prod: {},
       test: {
         access_token:
-          "TEST-683855394120734-062117-69b4d6187f64320ae240d02ccfd5a81e-149948416",
+          "APP_USR-2027441342588100-062816-24c8eb298d5322dce3fa0c8d3df049db-779055310",
         // el access_token de MP
       },
     };
