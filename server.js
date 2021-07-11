@@ -26,8 +26,8 @@ app.post("/create_preference", (req, res) => {
 		}],
 		back_urls: {
 			"success": "https://auremp.com/success",
-			"failure": "http://auremp.com/failure",
-			"pending": "http://auremp.com/pending"
+			"failure": "https://auremp.com/failure",
+			"pending": "https://auremp.com/pending"
 		},
 		auto_return: 'approved',
 	};
