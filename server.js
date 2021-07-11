@@ -48,6 +48,6 @@ app.get('/feedback', function(request, response) {
 	})
 });
 
-app.listen(8080, () => {
-  console.log("The server is now running on Port 8080");
+app.listen(process.env.PORT || 3000, () => {
+  console.log("The server is now running");
 });
